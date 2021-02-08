@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "storage_chests:block/copper_block"
+    }
+  }
+}

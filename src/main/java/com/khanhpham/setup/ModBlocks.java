@@ -25,7 +25,7 @@ public class ModBlocks {
     static void register() {
     }
 
-    //Helper method for registry blocks
+    //Helper method for registry block
     private static <T extends Block> RegistryObject<T> registryNoItem(String name, Supplier<T> block) {
         return Registration.BLOCKS.register(name, block);
     }
