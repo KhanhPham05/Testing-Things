@@ -2,6 +2,7 @@ package com.khanhpham.datagen;
 
 import com.khanhpham.StorageChests;
 import com.khanhpham.datagen.loottable.ModLootTableProvider;
+import com.khanhpham.datagen.recipe.ModRecipesProvider;
 import com.khanhpham.datagen.tag.ModTagProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -34,5 +35,9 @@ public final class DataGenerators {
         ModTagProvider.Blocks blockTags = new ModTagProvider.Blocks(generator, fileHelper);
         generator.addProvider(blockTags);
         generator.addProvider(new ModTagProvider.Items(generator, blockTags, fileHelper));
+
+        generator.addProvider(new ModRecipesProvider(generator));
+        //25:09
+    //https://www.youtube.com/watch?v=YD_ajlZ5TdY
     }
 }

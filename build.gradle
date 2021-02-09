@@ -86,12 +86,17 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.k-4u.nl"
     }
+
+    maven {
+        url 'https://maven.blamejared.com'
+    }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.0.15'
     compileOnly fg.deobf("mezz.jei:jei-${project.jei_mc_version}:${project.jei_version}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${project.jei_mc_version}:${project.jei_version}")
+    runtimeOnly fg.deobf("com.blamejared.crafttweaker:CraftTweaker-${project.minecraft_version}:${project.ct_version}")
 
 
 }
