@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "generalmod:block/hello_block"
+    }
+  }
+}
